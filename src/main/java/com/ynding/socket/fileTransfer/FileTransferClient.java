@@ -41,7 +41,7 @@ public class FileTransferClient extends Socket {
 	 */
 	public void sendFile() throws Exception {
 		try {
-			File file = new File("E:\\JDK1.6中文参考手册(JDK_API_1_6_zh_CN).CHM");
+			File file = new File("D://taxInfo.xls");
 			if (file.exists()) {
 				fis = new FileInputStream(file);
 				dos = new DataOutputStream(client.getOutputStream());
